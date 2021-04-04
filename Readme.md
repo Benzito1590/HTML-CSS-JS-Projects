@@ -32,7 +32,7 @@
 - Tribute(On Google Site)(HTML)
 
 ### Secondary Main Branch
-- Fcc Project Metric Imperial Converter(Javascript)
+- fcc Project Metric Imperial Converter(Javascript)
 - voting-app-master(JavaScript)
 
 
