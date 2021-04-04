@@ -1,0 +1,71 @@
+body {
+  font-size: 1.5em;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 10px;
+}
+
+table {
+  table-layout: fixed;
+  margin: 5% 5% 5% 5%;
+  width: 90%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+}
+
+th {
+  border: 1px solid white;
+}
+
+#display {
+  background-color: #CC0000;
+  font-size: 1.75em;
+  padding: 1em;
+  border-radius: 0px;
+  font-weight: normal;
+}
+
+.btn {
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid #fff;
+  line-height: 1.42857143;
+  border-radius: 0px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #CC0000;
+  border-color: #990000;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #ffffff;
+  background-color: #CC0000;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #cc3333;
+  border-color: #cc3333;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 1em 1em;
+  font-size: inherit;
+  line-height: 1em;
+  border-radius: 0px;
+}

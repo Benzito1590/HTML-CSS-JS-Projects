@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/calcStyle.css">
+    <script src="js/calcBrain.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".btn").on("click", function() {
+          var buttonPressed = $(this).html();
+          runTheNumbers(buttonPressed);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <th id="display" colspan="4"><p align="right">0<p></th>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg">1</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">2</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">3</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">+</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg">4</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">5</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">6</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">-</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg">7</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">8</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">9</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">*</button></th>
+      </tr>
+      <tr>
+        <th colspan="2"><button type="button" class="btn btn-primary btn-lg">0</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">.</button></th>
+        <th><button type="button" class="btn btn-primary btn-lg">/</button></th>
+      </tr>
+      <tr>
+        <th colspan="3"><button type="button" class="btn btn-primary btn-lg">c</button></th>
+        <th ><button type="button" class="btn btn-primary btn-lg">=</button></th>
+      </tr>
+    </table>
+    <center><p><a href="https://code.ianrobinson.net">Back to Portfolio</a></p></center>
+  </body>
+</html>
