@@ -36,7 +36,7 @@
 - voting-app-master(JavaScript)
 
 
-## Programming Language use in this Page
+## Programming Language that I use
 - HTML
 - CSS
 - Javascript
