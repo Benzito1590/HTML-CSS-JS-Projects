@@ -1,4 +1,4 @@
-## Hi. Welcome to my page. This is all my Projects that I make at FreeCodeCamp.org and my own projects that I make.
+## Hi. Welcome to my page. This is all my Projects that I make for FreeCodeCamp.org and some is my projects.
 
 ### On this Page
 
