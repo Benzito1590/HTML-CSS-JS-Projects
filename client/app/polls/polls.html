@@ -1,0 +1,22 @@
+<br>
+<div class="ui container">
+	<div class="ui stackable link centered poll cards">
+		<a class="ui card" ng-repeat="poll in polls" href="/polls/{{poll._id}}">
+			<div class="content">
+				<div class="right floated ui icon button"><i class="voters icon">{{poll.voters.length}}</i></div>
+				<div class="header">{{poll.name}}</div>
+				<div class="meta"><span translate="POLLS.CREATION" translate-values="{{ poll }}"></span><strong>{{poll.creator.name}}</strong></div>
+			</div>
+			<div class="ui content clearing segments">
+				<div class="ui meta segment" ng-repeat="item in poll.items|limitTo:2">
+					<div class="ui right floated"><i class="thumbs up icon"></i> {{item.votes}}</div>{{item.name}}
+				</div>
+			</div>
+			<div class="extra poll content">
+				<div class="ui center aligned meta" translate="POLLS.EXTRA" translate-values="{{poll}}" ng-show="poll.items.length - 2 > 0">
+				</div>
+				<div class="center aligned" ng-if="poll.items.length - 2 == 0 ">-</div>
+			</div>
+		</a>
+	</div>
+</div>

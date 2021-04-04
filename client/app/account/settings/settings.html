@@ -1,0 +1,56 @@
+<br>
+
+<div class="ui container">
+	<div class="ui stackable two centered cards">
+		<div class="ui card">
+
+			<div class="ui container grid content">
+				<div class="row">
+					<div class="sixteen wide column">
+						<h1 class='ui header'>{{ 'SETTINGS.LANGUAGE_CHANGE' | translate }}</h1>
+					</div>
+					<div class="sixteen wide column">
+						<div class="ui basic button" ng-click="changeLanguage(lang.key)" ng-repeat="lang in languages"><i class="{{lang.flag}} flag"></i> {{lang.name}}</div>
+					</div>
+				</div>
+				<div class="row" ng-if="isLoggedIn()">
+					<div class="sixteen wide column">
+						<h1 class='ui header'>{{ 'SETTINGS.PASSWORD_CHANGE' | translate }}</h1>
+					</div>
+					<div class="sixteen wide column">
+						<form class="ui form" name="form" ng-submit="changePassword(form)" novalidate>
+
+							<div class="form-group">
+								<label>{{ 'SETTINGS.PASSWORD_CURRENT' | translate }}</label>
+
+								<input type="password" name="password" class="form-control" ng-model="user.oldPassword"
+								       mongoose-error/>
+
+								<p class="help-block" ng-show="form.password.$error.mongoose">
+									{{ errors.other }}
+								</p>
+							</div>
+
+							<div class="form-group">
+								<label>{{ 'SETTINGS.PASSWORD_NEW' | translate }}</label>
+
+								<input type="password" name="newPassword" class="form-control" ng-model="user.newPassword"
+								       ng-minlength="3"
+								       required/>
+
+								<p class="help-block"
+								   ng-show="(form.newPassword.$error.minlength || form.newPassword.$error.required) && (form.newPassword.$dirty || submitted)">
+									{{ 'SETTINGS.PASSWORD_MINLENGTH' | translate }}
+								</p>
+							</div>
+
+							<p class="help-block"> {{ message }} </p>
+
+							<button class="ui action button" type="submit">{{ 'SAVE_CHANGES' | translate }}</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
