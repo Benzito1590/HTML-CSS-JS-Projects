@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Stock Price Checker</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Stock Price Checker</h1>
+    <form id="stock-price-form">
+      <label for="stock1">
+        Stock Code:
+        <input id="stock1" type="text" name="stock1" placeholder="goog" required=''>
+      </label>
+      <label for="stock2">
+        Stock to Compare (optional):
+        <input type="text" name="stock2" placeholder="msft">
+      </label>
+      <label for="like" class="like-toggle">
+        <input id="like" type="checkbox" name="like" value=true>
+        <span>
+          <i class="far fa-thumbs-up"></i>
+          Like
+        </span>
+        <div></div>
+      </label>
+      <button type="submit">Get Price!</button>
+    </form>
+    <div id="jsonResult"></div>
+  </div>
+  <script src="/public/script.js"></script>
+</body>
+
+</html>
