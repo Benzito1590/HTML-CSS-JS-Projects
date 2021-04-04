@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drum Sound Machine</title>
+  
+  <!-- Play well with Facebook -->
+  <meta property="og:url"                content="https://benzito1590.github.io/Drum-Sound-Machine/" />
+  <meta property="og:title"              content="Who Drum Sound Machine?" />
+  <meta property="og:description"        content="Have you ever played with a Drum soundboard?" />
+  <meta property="og:image"              content="https://benzito1590.github.io/doc-holiday-soundboard/library/image/DrumSoundMachine.jpg" />
+
+    <!-- Free Code Camp testing suite -->
+  <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
+  
+  <!-- This is the favicon -->
+  <link rel="icon" type="image/png" href="library/image/DocSays.png">
+
+  <!-- Skeleton Framework - Thank you DHG -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/drum.css">
+  
+  <!-- Custom JS -->
+  <script src="js/drum.js"></script>
+</head>
+<body>
+  <div id="drum-machine" class="container">
+    <h1>Holiday Ian Says...</h1>
+    <table>
+      <tr>
+        <td>
+          <p>Good evening then.</p>
+          <a id="0" onclick="manageClick(this)" class="drum-pad button button-primary">
+            Q
+            <audio src="library/Drum Sound/drum_goodEveningThen.mp3" class="clip" id="Q">
+          </a>
+        </td>
+        <td>
+          <p>We started a game we never got to finish.</p>
+          <a id="1" onclick="manageClick(this)" class="drum-pad button button-primary">
+            W
+            <audio src="library/Drum Sound/drum_weStartedAGame.mp3" class="clip" id="W">
+          </a>
+        </td>
+        <td>
+          <p>You may go now.</p>
+          <a id="2" onclick="manageClick(this)" class="drum-pad button button-primary">
+            E
+            <audio src="library/Drum Sound/drum_youMayGoNow.mp3" class="clip" id="E">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>I have not yet begun to defile myself.</p>
+          <a id="3" onclick="manageClick(this)" class="drum-pad button button-primary">
+            A
+            <audio src="library/Drum Sound/drum_defileMyself.mp3" class="clip" id="A">
+          </a>
+        </td>
+        <td>
+          <p>... must be a peach of a hand.</p>
+          <a id="4" onclick="manageClick(this)" class="drum-pad button button-primary">
+            S
+            <audio src="library/Drum Sound/drum_peachOfaHand.mp3" class="clip" id="S">
+          </a>
+        </td>
+        <td>
+          <p>Somebody just walked over your grave.</p>
+          <a id="5" onclick="manageClick(this)" class="drum-pad button button-primary">
+            D
+            <audio src="library/Drum Sound/drum_someBodyJustWalkedOverYourGrave.mp3" class="clip" id="D">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Sweet, soft, hungarian devil.</p>
+          <a id="6" onclick="manageClick(this)" class="drum-pad button button-primary">
+            Z
+            <audio src="library/Drum Sound/drum_sweetSoftHungarianDevil.mp3" class="clip" id="Z">
+          </a>
+        </td>
+        <td>
+          <p>You're a daisy if you do.</p>
+          <a id="7" onclick="manageClick(this)" class="drum-pad button button-primary">
+            X
+            <audio src="library/Drum Sound/drum_yourADaisyIfYouDo.mp3" class="clip" id="X">
+          </a>
+        </td>
+        <td>
+          <p>Poor soul...</p>
+          <a id="8" onclick="manageClick(this)" class="drum-pad button button-primary">
+            C
+            <audio src="library/Drum Sound/drum_poorSoul.mp3" class="clip" id="C">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h2 id="display">What does the Holiday Ian say?</h2>
+  </div>
+</body>
+</html>
