@@ -1,0 +1,87 @@
+<html>
+ <head>
+ <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+ <style>
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.flex-container {
+display: flex;
+}
+
+ </style>
+ </head>
+ 
+ <body>
+ <header id="header">
+ <center>
+ <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/343_Industries_logo.png" />
+ <nav id="nav-bar">
+ <a class="nav-link" href="Learn More">Learn More</a>
+ <a class="nav-link" href="#request-coupon">Request Coupon</a>
+ <a class="nav-link" href="#Buy-on-microsoft-store">Buy on Online Store</a>
+ 
+ </nav>
+ </center>
+ </header>
+ <section id="learn-more">
+ <center>
+ <h1>Game from 343 Industries, Halo(Microsoft).</h1>
+ <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MBb88gLmJZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </center>
+ </section>
+ <section id="request-coupon">
+ <h2>Request a Coupon</h2>
+ <form id="form" action="https://www.freecodecamp.com/email-submit">
+ <input id="email" type="email" placeholder="example@example.com" name="email"/></input>
+ <input id="submit" type="submit"></input>
+ </form>
+ </section>
+ <section id="buy-on-microsoft store">
+ <div class="flex-container">
+ <div><a href="Microsoft-affiliate-link"> Buy on Microsoft Store/Xbox</a></div>
+ <div><a href="Amazon-affiliate-link"> Buy on Amazon</a></div>
+ <div><a href="Halo-affiliate-link"> Buy on Halo Homepage</a></div>
+ 
+ </section>
+ 
+ 
+ </body>
+
+<h1>Product Landing Page</h1>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+
+
+    var header = document.getElementById("header");
+
+    var sticky = header.offsetTop;
+
+
+
+    function myFunction() {
+
+      if (window.pageYOffset > sticky) {
+
+        header.classList.add("sticky");
+
+      } else {
+
+        header.classList.remove("sticky");
+
+      }
+
+    }
+
+  </script>
+
+
+</html>
