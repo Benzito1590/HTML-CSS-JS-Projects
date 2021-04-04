@@ -1,4 +1,4 @@
-## Hi. Welcome to my page. This is all my Projects that I make for FreeCodeCamp.org and some is my projects.
+## Hi. Welcome to my page. This is all my Projects that I make for FreeCodeCamp.org.
 
 ### On this Page
 
@@ -41,5 +41,5 @@
 - CSS
 - Javascript
 
-## Please note if you want to copy my work, please don't. If you do, copy the code and change it in your own work.
+##  Please note if you want to copy my work, please don't. If you do, clone it and make it your own work.
 # Thanks
