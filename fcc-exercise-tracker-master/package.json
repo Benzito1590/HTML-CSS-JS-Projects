@@ -1,0 +1,40 @@
+{
+  "name": "fcc-exercise-tracker",
+  "version": "1.0.0",
+  "description": "Exercise Tracker API - FreeCodeCamp - moT01 and cmccormack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmccormack/fcc-exercise-tracker.git"
+  },
+  "keywords": [
+    "FreeCodeCamp",
+    "API",
+    "Exercise",
+    "FCC",
+    "node",
+    "express"
+  ],
+  "author": "cmccormack and moT01 and JLuboff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmccormack/fcc-exercise-tracker/issues"
+  },
+  "homepage": "https://github.com/cmccormack/fcc-exercise-tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "mongoose": "^5.2.6",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
