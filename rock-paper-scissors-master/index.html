@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Rock. Paper. Scissors." />
+		<meta property="og:title" content="Rock. Paper. Scissors" />
+		<meta property="og:type" content="website" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="preload" href="./assets/css/style.css" as="style" />
+		<link rel="prefetch" href="./assets/img/rock.png" />
+		<link rel="prefetch" href="./assets/img/paper.png" />
+		<link rel="prefetch" href="./assets/img/scissors.png" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<title>Rock | Paper | Scissors</title>
+	</head>
+
+	<body>
+		<section class="game">
+			<div class="score">
+				<div class="player-score">
+					<h2 class="player-score-text">Player</h2>
+					<p class="player-score-text">0</p>
+				</div>
+				<div class="score-logo">
+					<img src="./assets/cooks-logo.png" alt="" />
+				</div>
+				<div class="computer-score">
+					<h2 class="computer-score-text">M82</h2>
+					<p class="computer-score-text">0</p>
+				</div>
+			</div>
+			<div class="backdrop-images">
+				<img class="backdrop-img-left" src="./assets/Group-left.png" alt="" />
+				<img class="backdrop-img-right" src="./assets/Group-right.png" alt="" />
+			</div>
+			<div class="match fadeOut">
+				<h2 id="win" class="winner mb-sm">Choose an option</h2>
+				<div class="hands">
+					<img class="player-hand" src="./assets/rock.png" alt="" />
+					<img class="computer-hand" src="./assets/rock.png" alt="" />
+				</div>
+				<div class="options">
+					<button id="btnRock" class="rock" data-value="rock">rock</button>
+					<button id="btnPaper" class="paper" data-value="paper">paper</button>
+					<button id="btnScissors" class="scissors" data-value="scissors">scissors</button>
+				</div>
+			</div>
+			<div id="neon_wrapper" class="intro neon-wrapper">
+				<p class="neon-text segoe mb-sm">Matrix82 is challenging you to a Rock, Paper, Scissors game!</p>
+				<p class="neon-text-lg clip mb-sm">You have three chances to win this game!</p>
+				<p class="neon-text segoe mb">
+					Beat Matrix82 to win
+					<span class="neon-text-yellow">100 Free Spins + R 500 Welcome Bonus</span>
+					<br />
+					for your first R 10 deposit in Captain Cook's Casino!
+				</p>
+				<button id="btn" class="neon-btn">START</button>
+			</div>
+		</section>
+		<div id="congratsCon" class="congrats-container">
+			<div class="congrats-content">
+				<p class="congrats-header">Congratulations</p>
+				<p class="congrats-text">
+					You beat Matrix82! You have 3 minutes to claim
+					<span class="congrats-text-span">
+						100 Free Spins + R 500 Welcome Bonus for your first deposit of just $5
+					</span>
+					for a chance to win the Jackpot, before he can claim it!
+				</p>
+				<a href="#" target="_blank" id="congratsBtn" class="congrats-btn pulse">
+					Congratulations Player
+				</a>
+			</div>
+			<span id="countdown">03:00</span>
+		</div>
+		<script src="./assets/app.js"></script>
+		<script src="./assets/script.js"></script>
+	</body>
+</html>
