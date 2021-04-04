@@ -1,6 +1,6 @@
-# Hi. Welcome to my page. This is all my Projects that I make at FreeCodeCamp.org and my own projects that I make.
+## Hi. Welcome to my page. This is all my Projects that I make at FreeCodeCamp.org and my own projects that I make.
 
-# On this Page
+### On this Page
 
 ## FreeCodeCamp.org
 - Amer Brit Translator(Javascript)
@@ -32,7 +32,7 @@
 - Tribute(On Google Site)(HTML)
 - Voting App(Javascript)
 
-# Programming Language use in this Page
+## Programming Language use in this Page
 - HTML
 - CSS
 - Javascript
