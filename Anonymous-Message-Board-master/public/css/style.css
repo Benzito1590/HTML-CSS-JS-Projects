@@ -1,0 +1,159 @@
+:root {
+  --text-color: #333;
+  --secondary-color: #b5b5b5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+#title {
+  text-align: center;
+  margin: 2rem;
+}
+
+#thread-body,
+#board-body {
+  margin: 0 1rem;
+}
+
+.thread-text {
+  font-size: 2em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.thread,
+.reply,
+.new-reply {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+#board-body .thread-replies {
+  border-left: 1px solid var(--text-color);
+}
+
+.thread,
+.reply {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.date {
+  font-size: 0.75em;
+  margin-bottom: 0.5rem;
+}
+
+.options,
+.new-reply .controls {
+  display: flex;
+  align-items: center;
+}
+
+.thread-link {
+  text-decoration: none;
+}
+
+.btn,
+.response,
+.thread-link {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  font-weight: bold;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover,
+.thread-link:hover {
+  text-decoration: underline;
+}
+
+.delete-password {
+  outline: none;
+  border: none;
+  font: inherit;
+  border-bottom: 1px var(--secondary-color) solid;
+  padding: 0.25em;
+  margin-right: 0.4em;
+}
+
+.delete-password::placeholder,
+.new-reply textarea::placeholder {
+  color: inherit;
+}
+
+.btn,
+.response,
+.delete-password {
+  font-size: 0.8rem;
+}
+
+.delete-form {
+  width: 18em;
+  overflow: hidden;
+  color: inherit;
+}
+
+.delete-form form {
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-form form.hidden {
+  opacity: 0;
+  transform: translateX(-18em);
+}
+
+.new-reply form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.new-reply textarea {
+  resize: none;
+  margin-bottom: 0.75em;
+  max-width: 100%;
+  border-color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    text-align: left;
+  }
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .options .delete-form {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
+
+  .delete-form form {
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+    height: auto;
+  }
+
+  .delete-form form.hidden {
+    height: 0;
+    transform: translateY(-2em);
+  }
+}
